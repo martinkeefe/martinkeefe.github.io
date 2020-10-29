@@ -1,28 +1,15 @@
-import { vector } from './vector.js'
-
-export const particle = (x, y, speed, direction, grav) => {
+import {vector as vector2} from "./vector.js";
+export const particle = (x, y, speed, angle, gravity) => {
   return {
-    position: vector(x, y),
-    velocity: vector(0, 0).setLength(speed).setAngle(direction),
-    gravity: vector(0, grav || 0),
-
-    // create: function (x, y, speed, direction, grav) {
-    //     var obj = Object.create(this);
-    //     obj.position = vector.create(x, y);
-    //     obj.velocity = vector.create(0, 0);
-    //     obj.velocity.setLength(speed);
-    //     obj.velocity.setAngle(direction);
-    //     obj.gravity = vector.create(0, grav || 0);
-    //     return obj;
-    // },
-
-    accelerate: function (accel) {
-      this.velocity.addTo(accel)
+    position: vector2(x, y),
+    velocity: vector2(0, 0).setLength(speed).setAngle(angle),
+    gravity: vector2(0, gravity || 0),
+    accelerate(accel) {
+      this.velocity.incBy(accel);
     },
-
-    update: function () {
-      this.velocity.addTo(this.gravity)
-      this.position.addTo(this.velocity)
-    },
-  }
-}
+    update() {
+      this.velocity.incBy(this.gravity);
+      this.position.incBy(this.velocity);
+    }
+  };
+};
