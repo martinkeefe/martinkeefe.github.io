@@ -1,7 +1,7 @@
 import { vector } from './vector'
 import { particle } from './particle'
 
-const canvas = document.getElementById('canvas')
+const canvas = document.getElementById('canvas') as HTMLCanvasElement
 const context = canvas.getContext('2d')
 const width = (canvas.width = window.innerWidth)
 const height = (canvas.height = window.innerHeight)
