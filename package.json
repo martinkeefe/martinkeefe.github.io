@@ -1,0 +1,50 @@
+{
+  "name": "martinkeefe.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinkeefe/martinkeefe.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinkeefe/martinkeefe.github.io/issues"
+  },
+  "homepage": "https://github.com/martinkeefe/martinkeefe.github.io#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "prettier": "^2.1.2",
+    "snowpack": "^2.15.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2020": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "plugins": []
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "all"
+  }
+}
