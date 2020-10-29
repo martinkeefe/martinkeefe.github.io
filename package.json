@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "snowpack dev",
+    "start": "start snowpack dev",
     "build": "snowpack build "
   },
   "repository": {

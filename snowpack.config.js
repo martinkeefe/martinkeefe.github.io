@@ -1,26 +1,25 @@
 module.exports = {
-    mount: {
-        public: '/',
-        src: '/_dist_',
-    },
-    plugins: [
-    ],
-    install: [
-        /* ... */
-    ],
-    installOptions: {
-        /* ... */
-    },
-    devOptions: {
-        open: "none"
-    },
-    buildOptions: {
-        out: './docs'
-    },
-    proxy: {
-        /* ... */
-    },
-    alias: {
-        /* ... */
-    },
-};
+  mount: {
+    public: '/',
+    src: '/',
+  },
+  plugins: [],
+  install: [
+    /* ... */
+  ],
+  installOptions: {
+    /* ... */
+  },
+  devOptions: {
+    open: 'none',
+  },
+  buildOptions: {
+    out: './docs',
+  },
+  proxy: {
+    /* ... */
+  },
+  alias: {
+    /* ... */
+  },
+}
